@@ -1,0 +1,31 @@
+[project]
+name = "agentic-researcher"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "AthulKrishnaAV47", email = "athulkrishnaav171@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "arxiv>=4.0.2",
+    "e2b-code-interpreter>=2.11.5",
+    "httpx>=0.28.1",
+    "langchain-core>=1.7.0",
+    "langchain-openai>=1.7.3",
+    "langgraph>=1.2.18",
+    "openai>=3.40.0",
+    "pydantic>=2.14.1",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.66.1",
+    "tavily-python>=0.8.5",
+    "tiktoken>=0.14.0",
+    "trafilatura>=2.3.1",
+]
+
+[project.scripts]
+agentic-researcher = "agentic_researcher:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
